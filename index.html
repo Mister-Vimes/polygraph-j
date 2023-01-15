@@ -1,0 +1,68 @@
+<head>
+    <title>Polygraph-J (Web Version)</title>
+    <script src="polygraph-j-class.js"></script>     
+    <script src="polygraph-j.js"></script>   
+    <link rel="stylesheet" href="polygraph-j.css" />
+</head>
+<body>
+    <div id="color-catcher" onclick="document.getElementById('color-picker').style.display='none'; document.getElementById('color-catcher').style.display='none';"></div>
+    <header>
+        <span id="title">Polygraph-J</span>
+        <span id="title-desc">Data Visualization Creator</span>
+    </header>
+    <div id="controls">
+        <div id="main-control-row">
+            <div id="export-cont" class="main-control">
+                <a id="export" download="polygraph.jpeg" class="controls-button">Export</a>
+            </div>
+            <div id="graph-title-cont" class="main-control">
+                <label for="graph-title" id="graph-title-label">Graph Title</label>
+                <input type="text" id="graph-title" />
+            </div>
+            <div id="maximum-cont" class="main-control">
+                <label for="maximum" class="opt-label">Maximum Value</label>
+                <input type="text" class="opt-input" id="maximum" />
+            </div>
+            <div id="graph-average-cont" class="main-control">
+                <label for="graph-average" id="graph-average-label">Average Values: </label>
+                <input type="checkbox" id="graph-average" name="graphAverage" />
+            </div>
+            <div id="category-units-cont" class="main-control">
+                <label for="cat-units" class="opt-label">Category Unit Name</label>
+                <input type="text" class="opt-input" id="cat-units" />
+            </div>
+            <!--<div id="layer-units-cont" class="main-control">
+                <label for="layer-units" class="opt-label">Layer Unit Name</label>
+                <input type="text" class="opt-input" id="layer-units" />
+            </div>-->
+            <div id="rotation-cont" class="main-control">
+                <label for="rotation" class="opt-label">Rotation (degrees)</label>
+                <input type="text" class="opt-input" id="rotation" />
+            </div>
+        </div>
+        <div id="left-sidebar">
+            <div id="layer-controls">
+                <!--<label for="cat-unit-display">Display Category Units:</label>
+                <input type="checkbox" id="cat-unit-display" name="catUnits" />-->                
+                <!--<label for="layer-unit-display">Display Layer Units:</label>
+                <input type="checkbox" id="layer-unit-display" name="layerUnits" />-->
+            </div>
+            <div id="layer-sidebar">
+                <div id="color-picker"></div>
+            </div>
+            <div id="add-layer-cont">
+                <div class="controls-button" id="add-layer">Add Layer</div>
+            </div>
+        </div>
+        <div id="work-area">
+            <div id="category-space">
+                <div id="category-header">
+                    <span id="category-labels-cont"></span>
+                    <!--<div class="controls-button" id="add-cat">Add Category</div>-->
+                </div>
+            </div>
+            <div id="remove-cats-row"></div>
+        </div>
+    </div>
+    <canvas id="pieGraph" width="1140" height="610"></canvas>
+</body>

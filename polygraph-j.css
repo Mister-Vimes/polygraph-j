@@ -1,0 +1,260 @@
+body {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: conic-gradient(from 147deg at 50% 40%, #77B, #008, #22D, #77B);
+    color: #eee;
+    margin: 1em 4em;
+}
+
+#color-catcher {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height:100%;
+    width: 100%;
+    background: #222;
+    opacity: .3;
+    display: none;
+}
+
+header {
+    width: 1122px;
+    font-size: 2.1em;
+}
+
+header #title {
+    float: left;
+    font-size: 110%;
+    text-decoration: underline;
+}
+
+header #title-desc {
+    float: right;
+}
+
+#controls {
+    text-align: left;
+    clear: both;
+    float: left;
+    border: 2px #aaa double;
+    width: 1122px;
+    padding: 6px;
+    margin-bottom: 4px;
+    max-height: 36%;
+    overflow: auto;
+}
+
+#export {
+    color:#aaa;
+    text-decoration: none;
+}
+
+#main-control-row {
+    width: 100%;
+    height: 2.7em;
+    border-bottom: 2px #337 solid;
+    padding: 4px;
+}
+
+.main-control:not(:first-child) {
+    padding: 2px;
+    margin-left: 28px;
+}
+
+.main-control, .main-control label, .main-control input, .layer-label {
+    float: left;
+}
+
+.main-control input[type=text] {
+    clear: left;
+    width: 7em;
+}
+
+#graph-average {
+    clear: none;
+}
+
+.cat-width {
+    width: 12em;
+}
+
+.category-label {
+    float: left;
+}
+
+.cat-size-label {
+    font-size: .8em;
+    float: left;
+    clear: left;
+    margin-top: 8px;
+}
+
+.cat-size {
+    float: left;
+    width: 3em;
+    margin: 6px 0 0 4px;
+}
+
+#left-sidebar {
+    width:12em;
+    height: auto;
+    float: left;
+    border-right: 2px solid #337;
+    margin: none;
+    padding: none;
+}
+
+#layer-controls, #category-header {
+    height: 54px;
+}
+
+#layer-controls, #layer-sidebar {
+    width: 100%;
+    float: left;
+    clear: left;
+    padding: 5px;
+}
+
+#layer-controls label {
+    font-size: 0.8em;
+}
+
+#layer-controls .label, #layer-controls .input {
+    margin-top: 4px;
+}
+
+#work-area, #category-space {
+    float: left;
+}
+#work-area {
+    max-width: 800px;
+    overflow: auto;
+}
+
+.cat-row {
+    clear: left;
+    float: left;
+    padding: 0;
+    border-top: 1px solid #006;
+    border-bottom: 1px solid #006;
+    height: 54px;
+}
+
+.cat-node, .category-label-cont {
+    width: 11em;
+    float: left;
+    padding: 6px;
+    border-left: 1px solid #337;
+    border-right: 1px solid #337;
+    overflow: hidden;
+}
+
+.cat-node:first-child, .category-label-cont:first-child {
+    border-left: none;
+}
+
+.layer-cont {
+    float: left;
+    clear: left;
+    height: 54px;
+    padding: 1px;
+}
+
+.category-label-cont {
+    height: 100%;
+}
+
+.layer-color {
+    clear: left;
+}
+
+.blend-label, .blend-input {
+    float: left;
+}
+
+.blend-label {
+    text-align: right;
+    font-size: 0.7em;
+    padding: 0 4px 0 24px;
+}
+
+.blend-input {
+    width: 2.1em;
+    margin: 6px 0 0;
+}
+
+#color-picker {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    max-width: 200px;
+    z-index: 110;
+    display: none;
+    background: #aaa;
+    border: 3px double #003;
+    padding: 3px;
+}
+
+.color {
+    margin: 6px;
+    border: 1px solid #000;
+    width: 32px;
+    height: 16px;
+    float: left;
+}
+
+.controls-button {
+    text-align: center;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    background: transparent;
+    padding: 2px;
+    clear: both;
+}
+
+.remove-layer-button {
+    font-size: 0.89em;
+}
+
+#add-cat, .remove-layer-button {
+    float: right;
+    margin: 12px 2px;
+}
+
+#add-cat {
+    clear: none;
+}
+
+.remove-cat-button {
+    font-size: 0.89em;
+    float: left;
+    width: 12em;
+    margin: 2px 6px;
+}
+.controls-button.remove-cat-button:not(:first-child) {
+    clear: none;
+}
+
+.controls-button:hover {
+    background: #aaa;
+    color: #006;
+}
+
+.node-label, .opt-label {
+    float: left;
+    max-height: 1.2em;
+}
+
+.node-input, .opt-input {
+    clear: left;
+}
+
+#pieGraph {
+    background: #fff;
+    border: 1px #000 solid;
+    clear: both;
+    float: left;
+}
